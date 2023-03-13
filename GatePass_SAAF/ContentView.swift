@@ -17,9 +17,10 @@ struct ContentView: View {
                  .resizable()
                 .frame(width: 50.0, height: 50.0)
                 Text("SAAF")
+                    .frame(alignment: .center)
                     .foregroundColor(Color.white)
+                    .padding(.bottom, 200.0)
                 Rectangle()
-                
                     .frame(width:100, height:5.0)
                     .foregroundColor(Color.white)
             }
