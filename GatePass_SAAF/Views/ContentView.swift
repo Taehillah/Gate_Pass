@@ -22,6 +22,27 @@ struct ContentView: View {
                                 .frame(width: geo.size.width, height: geo.size.height)
                     }
                                 .edgesIgnoringSafeArea(.all)
+                
+                VStack{
+                    Text("REQUEST")
+                        .fontWeight(.heavy)
+                        .multilineTextAlignment(.leading)
+                        .foregroundColor(Color.white)
+                        .padding( .leading, 150.0)
+                        .padding( .top, 100)
+                        .position(CGPointZero)
+                        
+                }
+            
+                
+                VStack{
+                    
+                    
+                    
+                    
+                    
+                    
+                }
                             
             }
             
