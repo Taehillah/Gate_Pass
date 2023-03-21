@@ -11,6 +11,8 @@
 		9F29C73B29BE4428006D8034 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F29C73A29BE4428006D8034 /* ContentView.swift */; };
 		9F29C73D29BE4429006D8034 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F29C73C29BE4429006D8034 /* Assets.xcassets */; };
 		9F29C74029BE4429006D8034 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F29C73F29BE4429006D8034 /* Preview Assets.xcassets */; };
+		9FA2F09929CA12CC00BAF8AC /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA2F09829CA12CC00BAF8AC /* SignUpView.swift */; };
+		9FA2F09B29CA1A6E00BAF8AC /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA2F09A29CA1A6E00BAF8AC /* SplashScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		9F29C73A29BE4428006D8034 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9F29C73C29BE4429006D8034 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F29C73F29BE4429006D8034 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9FA2F09829CA12CC00BAF8AC /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		9FA2F09A29CA1A6E00BAF8AC /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				9F29C73829BE4428006D8034 /* GatePass_SAAFApp.swift */,
-				9F29C73A29BE4428006D8034 /* ContentView.swift */,
+				9FA2F09529CA10A900BAF8AC /* Views */,
 				9F29C73C29BE4429006D8034 /* Assets.xcassets */,
 				9F29C73E29BE4429006D8034 /* Preview Content */,
 			);
@@ -65,6 +69,16 @@
 				9F29C73F29BE4429006D8034 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9FA2F09529CA10A900BAF8AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9FA2F09A29CA1A6E00BAF8AC /* SplashScreenView.swift */,
+				9F29C73A29BE4428006D8034 /* ContentView.swift */,
+				9FA2F09829CA12CC00BAF8AC /* SignUpView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FA2F09B29CA1A6E00BAF8AC /* SplashScreenView.swift in Sources */,
 				9F29C73B29BE4428006D8034 /* ContentView.swift in Sources */,
+				9FA2F09929CA12CC00BAF8AC /* SignUpView.swift in Sources */,
 				9F29C73929BE4428006D8034 /* GatePass_SAAFApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

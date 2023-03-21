@@ -11,7 +11,7 @@ import SwiftUI
 struct GatePass_SAAFApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashScreenView()
         }
     }
 }
