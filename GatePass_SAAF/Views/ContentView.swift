@@ -10,56 +10,54 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var animateImage = true //original size declaration
+    @State var placeTo = ""
+    @State var backBy = ""
+    @State var reason = ""
+    @State var authorize = ""
     
     var body: some View {
-  
-            ZStack{
-                
-                GeometryReader { geo in
-                            Image("MainBK")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: geo.size.width, height: geo.size.height)
-                    }
-                                .edgesIgnoringSafeArea(.all)
-                
-                VStack{
-                    Text("REQUEST")
-                        .fontWeight(.heavy)
-                        .multilineTextAlignment(.leading)
-                        .foregroundColor(Color.white)
-                        .padding( .leading, 150.0)
-                        .padding( .top, 100)
-                        .position(CGPointZero)
-                        
-                }
+        
+        ZStack{
             
+            GeometryReader { geo in
+                Image("MainBK")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: geo.size.width, height: geo.size.height)
+            }
+            .edgesIgnoringSafeArea(.all)
+            
+            VStack{
+                Text("REQUEST")
+                    .fontWeight(.heavy)
+                    .multilineTextAlignment(.leading)
+                    .foregroundColor(Color.white)
+                    .padding( .leading, 150.0)
+                    .padding( .top, 100)
+                    .position(CGPointZero)
                 
-                VStack{
-                    Image("Image")
-                        .resizable(resizingMode: .stretch)
-                        .frame(width:70, height:70)
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                }
-                            
             }
             
-                }
-        
+            
+            VStack{
+                Image("Image")
+                    .resizable(resizingMode: .stretch)
+                    .frame(width:70, height:70)
+                
+                
             }
+            
+        }
         
-
-
-
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    }
+    
+    
+    
+    
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
 }
