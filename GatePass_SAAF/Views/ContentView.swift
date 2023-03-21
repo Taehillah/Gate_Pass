@@ -44,8 +44,23 @@ struct ContentView: View {
                     .resizable(resizingMode: .stretch)
                     .frame(width:70, height:70)
                 
-                
+                VStack(alignment: .leading){
+                    Text("To (Place Visiting)")
+                        .foregroundColor(Color(white: 1.0))
+                        .fontWeight(.bold)
+                        
+                    HStack{
+                        Image(systemName: "map")
+                            .foregroundColor(Color(white: 0.9))
+                        TextField("Place", text: $placeTo)
+                    }
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                }
+                .padding()
             }
+            
+            
+         
             
         }
         
