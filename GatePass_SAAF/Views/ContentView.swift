@@ -48,6 +48,7 @@ struct ContentView: View {
                     Text("To (Place Visiting)")
                         .foregroundColor(Color(white: 1.0))
                         .fontWeight(.bold)
+                        .padding(.top)
                         
                     HStack{
                         Image(systemName: "map")
@@ -55,6 +56,31 @@ struct ContentView: View {
                         TextField("Place", text: $placeTo)
                     }
                     .textFieldStyle(RoundedBorderTextFieldStyle())
+                    
+                    Text("Back by (Time)")
+                        .foregroundColor(Color(white: 1.0))
+                        .fontWeight(.bold)
+                        .padding(.top)
+                        
+                    HStack{
+                        Image(systemName: "clock")
+                            .foregroundColor(Color(white: 0.9))
+                        TextField("Time", text: $backBy)
+                    }
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                 
+                    Text("Reason")
+                        .foregroundColor(Color(white: 1.0))
+                        .fontWeight(.bold)
+                        .padding(.top)
+                        
+                    HStack{
+                        Image(systemName: "book")
+                            .foregroundColor(Color(white: 0.9))
+                        TextField("Comment", text: $reason)
+                    }
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    
                 }
                 .padding()
             }
