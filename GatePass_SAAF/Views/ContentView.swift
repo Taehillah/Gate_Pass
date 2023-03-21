@@ -81,6 +81,19 @@ struct ContentView: View {
                     }
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     
+                    Text("Authority")
+                        .foregroundColor(Color(white: 1.0))
+                        .fontWeight(.bold)
+                        .padding(.top)
+                        
+                    HStack{
+                        Image(systemName: "pencil")
+                            .foregroundColor(Color(white: 0.9))
+                        TextField("Authentication Key", text: $authorize)
+                    }
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    
+                    
                 }
                 .padding()
             }
