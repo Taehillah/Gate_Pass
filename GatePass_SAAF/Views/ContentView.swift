@@ -14,6 +14,7 @@ struct ContentView: View {
     @State var backBy = ""
     @State var reason = ""
     @State var authorize = ""
+    @State var submit = ""
     
     var body: some View {
         
@@ -28,14 +29,21 @@ struct ContentView: View {
             .edgesIgnoringSafeArea(.all)
             
             VStack{
-                Text("REQUEST")
-                    .fontWeight(.heavy)
-                    .multilineTextAlignment(.leading)
-                    .foregroundColor(Color.white)
-                    .padding( .leading, 150.0)
-                    .padding( .top, 100)
-                    .position(CGPointZero)
-                
+                HStack{
+                    Image(systemName: "arrowshape.backward.fill")
+                        .foregroundColor(Color(white: 0.9))
+                        .padding( .leading, 50.0)
+                        .padding( .top, 70)
+                        .position(CGPointZero)
+                    Text("REQUEST")
+                        .fontWeight(.heavy)
+                        
+                        .foregroundColor(Color.white)
+                        .padding( .top, 70)
+                        .padding( .leading, -180)
+                        .position(CGPointZero)
+                  
+                }
             }
             
             
@@ -90,16 +98,18 @@ struct ContentView: View {
                         Image(systemName: "pencil")
                             .foregroundColor(Color(white: 0.9))
                         TextField("Authentication Key", text: $authorize)
-                    }
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                        
                     
+                  
+                     
+                    }
                     
                 }
                 .padding()
             }
             
-            
-         
+
             
         }
         
