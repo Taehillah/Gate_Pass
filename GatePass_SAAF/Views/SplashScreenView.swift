@@ -30,7 +30,7 @@ struct SplashScreenView: View {
                 VStack{
                     Image("Image")
                      .resizable()
-                    .frame(width: 50.0, height: 50.0)
+                    .frame(width: 80.0, height: 80.0)
                     .scaleEffect(animateImage ? 1.0 : 0.9) // if animate image is true set scale to 1 else 0.9
                     .onAppear(){
                        animateImage = false //activates the else of 0.9 in the .scaleEffect

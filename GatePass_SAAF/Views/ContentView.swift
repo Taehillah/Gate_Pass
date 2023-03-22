@@ -48,7 +48,7 @@ struct ContentView: View {
                     Text("To (Place Visiting)")
                         .foregroundColor(Color(white: 1.0))
                         .fontWeight(.bold)
-                        .padding(.top)
+                        .padding(.top, 70)
                         
                     HStack{
                         Image(systemName: "map")
