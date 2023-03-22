@@ -42,7 +42,7 @@ struct ContentView: View {
             VStack{
                 Image("Image")
                     .resizable(resizingMode: .stretch)
-                    .frame(width:70, height:70)
+                    .frame(width:65, height:65)
                 
                 VStack(alignment: .leading){
                     Text("To (Place Visiting)")
