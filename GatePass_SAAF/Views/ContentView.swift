@@ -15,6 +15,7 @@ struct ContentView: View {
     @State var reason = ""
     @State var authorize = ""
     @State var submit = ""
+    @State var nako = ""
     
     var body: some View {
         
@@ -63,6 +64,7 @@ struct ContentView: View {
                             .foregroundColor(Color(white: 0.9))
                         TextField("Place", text: $placeTo)
                     }
+                  
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     
                     Text("Back by (Time)")
@@ -98,19 +100,27 @@ struct ContentView: View {
                         Image(systemName: "pencil")
                             .foregroundColor(Color(white: 0.9))
                         TextField("Authentication Key", text: $authorize)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                        
-                    
-                  
-                     
                     }
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                
                     
                 }
+                
                 .padding()
             }
             
-
-            
+            Button(action: {
+                print(self.$placeTo)
+            }, label: {
+                Text("Submit")
+                    .fontWeight(.heavy)
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                    .frame(width:100, height:30)
+                    .padding(.top, 600.0)
+                    
+                    
+            })
         }
         
     }
