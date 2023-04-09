@@ -8,6 +8,16 @@
 import SwiftUI
 
 struct SignUpView: View {
+    
+    @State var fn = ""
+    @State var unit = ""
+    @State var pwd = ""
+    @State var pwdRepeat = ""
+    
+    
+    
+    
+    
     var body: some View {
         
         
@@ -40,6 +50,69 @@ struct SignUpView: View {
                 }
             }
             
+            VStack{
+                Image("Image")
+                    .resizable(resizingMode: .stretch)
+                    .frame(width:65, height:65)
+                
+                VStack(alignment: .leading){
+                    Text("Force Number")
+                        .foregroundColor(Color(white: 1.0))
+                        .fontWeight(.bold)
+                        .padding(.top, 70)
+                    
+                    HStack{
+                        Image(systemName: "map")
+                            .foregroundColor(Color(white: 0.9))
+                        TextField("force no", text: $fn)
+                    }
+                    
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    
+                    
+                    Text("Unit Name")
+                        .foregroundColor(Color(white: 1.0))
+                        .fontWeight(.bold)
+                        .padding(.top, 70)
+                    
+                    HStack{
+                        Image(systemName: "map")
+                            .foregroundColor(Color(white: 0.9))
+                        TextField("force no", text: $fn)
+                    }
+                    
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    
+                    Text("Password")
+                        .foregroundColor(Color(white: 1.0))
+                        .fontWeight(.bold)
+                        .padding(.top, 70)
+                    
+                    HStack{
+                        Image(systemName: "map")
+                            .foregroundColor(Color(white: 0.9))
+                        TextField("force no", text: $fn)
+                    }
+                    
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    
+                    Text("Password (Repeat)")
+                        .foregroundColor(Color(white: 1.0))
+                        .fontWeight(.bold)
+                        .padding(.top, 70)
+                    
+                    HStack{
+                        Image(systemName: "map")
+                            .foregroundColor(Color(white: 0.9))
+                        TextField("force no", text: $fn)
+                    }
+                    
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    
+                    
+                }
+                .padding()
+            }
             
             
             
