@@ -13,14 +13,10 @@ struct SignUpView: View {
     @State var unit = ""
     @State var pwd = ""
     @State var pwdRepeat = ""
-    
-    
-    
-    
-    
+    @State var btnSignUp = ""
+
     var body: some View {
-        
-        
+
         
         ZStack{
             
@@ -62,7 +58,7 @@ struct SignUpView: View {
                         .padding(.top, 70)
                     
                     HStack{
-                        Image(systemName: "map")
+                        Image(systemName: "pencil")
                             .foregroundColor(Color(white: 0.9))
                         TextField("force no", text: $fn)
                     }
@@ -73,10 +69,10 @@ struct SignUpView: View {
                     Text("Unit Name")
                         .foregroundColor(Color(white: 1.0))
                         .fontWeight(.bold)
-                        .padding(.top, 70)
+                        .padding(.top)
                     
                     HStack{
-                        Image(systemName: "map")
+                        Image(systemName: "star")
                             .foregroundColor(Color(white: 0.9))
                         TextField("force no", text: $fn)
                     }
@@ -86,10 +82,10 @@ struct SignUpView: View {
                     Text("Password")
                         .foregroundColor(Color(white: 1.0))
                         .fontWeight(.bold)
-                        .padding(.top, 70)
+                        .padding(.top)
                     
                     HStack{
-                        Image(systemName: "map")
+                        Image(systemName: "book")
                             .foregroundColor(Color(white: 0.9))
                         TextField("force no", text: $fn)
                     }
@@ -99,10 +95,10 @@ struct SignUpView: View {
                     Text("Password (Repeat)")
                         .foregroundColor(Color(white: 1.0))
                         .fontWeight(.bold)
-                        .padding(.top, 70)
+                        .padding(.top)
                     
                     HStack{
-                        Image(systemName: "map")
+                        Image(systemName: "book")
                             .foregroundColor(Color(white: 0.9))
                         TextField("force no", text: $fn)
                     }
@@ -114,26 +110,18 @@ struct SignUpView: View {
                 .padding()
             }
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+            Button(action: {
+                print(self.$btnSignUp)
+            }, label: {
+                
+                Text("SignUp")
+                    .fontWeight(.heavy)
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                    .frame(width:100, height:30)
+                    .padding(.top, 600.0)
+                    
+            })
         }
     }
 }
