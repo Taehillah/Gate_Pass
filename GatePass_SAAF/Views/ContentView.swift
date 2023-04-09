@@ -112,6 +112,7 @@ struct ContentView: View {
             Button(action: {
                 print(self.$placeTo)
             }, label: {
+                
                 Text("Submit")
                     .fontWeight(.heavy)
                     .foregroundColor(.white)
@@ -121,6 +122,7 @@ struct ContentView: View {
                     
                     
             })
+           
         }
         
     }
