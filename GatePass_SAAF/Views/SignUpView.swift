@@ -119,7 +119,10 @@ struct SignUpView: View {
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .frame(width:100, height:30)
+                    .background(LinearGradient(gradient: Gradient(colors: [ .clear, .clear, .clear, .clear]), startPoint: .leading, endPoint: .trailing))
+                    .border(.background)
                     .padding(.top, 600.0)
+                    .cornerRadius(20)
                     
             })
         }
