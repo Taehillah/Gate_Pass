@@ -14,6 +14,7 @@ struct SignUpView: View {
     @State var pwd = ""
     @State var pwdRepeat = ""
     @State var btnSignUp = ""
+    @State private var mvToLoginView = false
 
     var body: some View {
 
@@ -110,10 +111,8 @@ struct SignUpView: View {
                 .padding()
             }
             
-            Button(action: {
-                print(self.$btnSignUp)
-            }, label: {
-                
+            Button(action: {mvToLoginView = true}){
+              
                 Text("SignUp")
                     .fontWeight(.heavy)
                     .foregroundColor(.white)
@@ -123,8 +122,8 @@ struct SignUpView: View {
                     .border(.background)
                     .padding(.top, 600.0)
                     .cornerRadius(20)
-                    
-            })
+            }
+            NavigationLink("", destination: LoginView(), isActive: $mvToLoginView)
         }
     }
 }
