@@ -112,7 +112,7 @@ struct ContentView: View {
             
             Button(action: {mvToLoginView = true}){
               
-                Text("SignUp")
+                Text("Submit")
                     .fontWeight(.heavy)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
