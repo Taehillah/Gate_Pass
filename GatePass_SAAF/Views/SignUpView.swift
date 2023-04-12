@@ -38,7 +38,7 @@ struct SignUpView: View {
                         .position(CGPointZero)
                     Text("SIGN UP")
                         .fontWeight(.heavy)
-                        
+
                         .foregroundColor(Color.white)
                         .padding( .top, 70)
                         .padding( .leading, -180)
