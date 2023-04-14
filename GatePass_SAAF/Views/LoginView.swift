@@ -34,7 +34,7 @@ struct LoginView: View {
                         .padding( .leading, 50.0)
                         .padding( .top, 70)
                         .position(CGPointZero)
-                    Text("    LOGIN")
+                    Text("    EXIT")
                         .fontWeight(.heavy)
                         
                         .foregroundColor(Color.white)
@@ -85,7 +85,7 @@ struct LoginView: View {
             
             Button(action: {mvSignUpView = true}){
               
-                Text("SignUp")
+                Text("Login")
                     .fontWeight(.heavy)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
