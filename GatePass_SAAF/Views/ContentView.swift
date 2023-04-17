@@ -37,7 +37,7 @@ struct ContentView: View {
                         .padding( .leading, 50.0)
                         .padding( .top, 70)
                         .position(CGPointZero)
-                    Text("REQUEST")
+                    Text("EXIT")
                         .fontWeight(.heavy)
                         
                         .foregroundColor(Color.white)
