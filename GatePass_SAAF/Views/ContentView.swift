@@ -3,7 +3,7 @@
 //  GatePass_SAAF
 //
 //  Created by Ishmael Mafole on 2023/03/12.
-//
+//  The application has not been adopted by the organisation in any way or form
 
 import SwiftUI
 
