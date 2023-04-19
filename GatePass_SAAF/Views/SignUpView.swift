@@ -29,23 +29,17 @@ struct SignUpView: View {
             }
             .edgesIgnoringSafeArea(.all)
             
-            VStack{
-                HStack{
-                    Image(systemName: "arrowshape.backward.fill")
-                        .foregroundColor(Color(white: 0.9))
-                        .padding( .leading, 50.0)
-                        .padding( .top, 70)
-                        .position(CGPointZero)
-                    Text("LOGIN")
-                        .fontWeight(.heavy)
-
-                        .foregroundColor(Color.white)
-                        .padding( .top, 70)
-                        .padding( .leading, -180)
-                        .position(CGPointZero)
-                  
-                }
+            NavigationView{
+                VStack{
+                    HStack{
+                        NavigationLink(destination: LoginView()){
+                            Text("Login")
+                        }
+                    }
+                    
+                    .navigationTitle("Log in")
             }
+                
             
             VStack{
                 Image("Image")
@@ -123,10 +117,13 @@ struct SignUpView: View {
                     .padding(.top, 600.0)
                     .cornerRadius(20)
             }
-            NavigationLink("", destination: LoginView(), isActive: $mvToLoginView)
         }
     }
 }
+    
+        
+    }
+
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
         SignUpView()
