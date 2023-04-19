@@ -97,6 +97,7 @@ struct LoginView: View {
             }
             NavigationLink("", destination: LoginView(), isActive: $mvSignUpView)
         }
+        .navigationTitle("Login")
         }
     }
 
