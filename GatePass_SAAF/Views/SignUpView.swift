@@ -30,11 +30,23 @@ struct SignUpView: View {
             
             
                 VStack{
-                    HStack{
+                    NavigationLink(destination: LoginView()){
                         
+                        Image(systemName: "arrowshape.backward")
+                        
+                            .foregroundColor(Color(white: 0.9))
+                            .padding( .leading, 50.0)
+                            .padding( .top, 70)
+                            .position(CGPointZero)
+                        
+                        Text(" Login")
+                            .foregroundColor(Color.white)
+                            .padding( .top, 70)
+                            .padding( .leading, -180)
+                            .position(CGPointZero)
                     }
-                                }
-                
+          }
+                .navigationTitle("Logen")
             
             VStack{
                 Image("Image")
