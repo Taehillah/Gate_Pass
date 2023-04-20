@@ -31,13 +31,9 @@ struct SignUpView: View {
             
                 VStack{
                     HStack{
-                        NavigationLink(destination: LoginView()){
-                            Text("Login")
-                        }
+                        
                     }
-                    
-                    .navigationTitle("Log in")
-            }
+                                }
                 
             
             VStack{
