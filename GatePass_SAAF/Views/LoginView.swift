@@ -29,7 +29,7 @@ struct LoginView: View {
             
             VStack{
                 HStack{
-                    Image(systemName: "arrowshape.backward.fill")
+                    Image(systemName: "arrowshape.backward")
                         .foregroundColor(Color(white: 0.9))
                         .padding( .leading, 50.0)
                         .padding( .top, 70)
