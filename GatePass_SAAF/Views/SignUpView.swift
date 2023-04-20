@@ -18,7 +18,6 @@ struct SignUpView: View {
 
     var body: some View {
 
-        
         ZStack{
             
             GeometryReader { geo in
@@ -29,7 +28,7 @@ struct SignUpView: View {
             }
             .edgesIgnoringSafeArea(.all)
             
-            NavigationView{
+            
                 VStack{
                     HStack{
                         NavigationLink(destination: LoginView()){
@@ -122,7 +121,7 @@ struct SignUpView: View {
 }
     
         
-    }
+    
 
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
