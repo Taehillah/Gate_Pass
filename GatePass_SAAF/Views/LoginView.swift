@@ -95,7 +95,7 @@ struct LoginView: View {
                     .padding(.top, 400.0)
                     .cornerRadius(20)
             }
-            NavigationLink("", destination: LoginView(), isActive: $mvSignUpView)
+         
         }
         .navigationTitle("Login")
         }
