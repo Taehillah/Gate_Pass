@@ -54,7 +54,7 @@ struct SignUpView: View {
                     
                     HStack{
                         Image(systemName: "pencil")
-                            .foregroundColor(Color(white: 0.9))
+                            .foregroundColor(Color(white: 0.8))
                         TextField("force no", text: $fn)
                     }
                     
