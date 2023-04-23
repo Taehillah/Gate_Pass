@@ -81,8 +81,8 @@
 				9FA2F09A29CA1A6E00BAF8AC /* SplashScreenView.swift */,
 				9FA2F09829CA12CC00BAF8AC /* SignUpView.swift */,
 				9F2E0DE429E493E3007902BA /* LoginView.swift */,
-				9FAFE1A729F56F93007B4A2F /* Passed.swift */,
 				9F29C73A29BE4428006D8034 /* ContentView.swift */,
+				9FAFE1A729F56F93007B4A2F /* Passed.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
