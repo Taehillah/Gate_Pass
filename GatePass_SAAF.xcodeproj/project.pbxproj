@@ -14,6 +14,7 @@
 		9F2E0DE529E493E3007902BA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2E0DE429E493E3007902BA /* LoginView.swift */; };
 		9FA2F09929CA12CC00BAF8AC /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA2F09829CA12CC00BAF8AC /* SignUpView.swift */; };
 		9FA2F09B29CA1A6E00BAF8AC /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA2F09A29CA1A6E00BAF8AC /* SplashScreenView.swift */; };
+		9FAFE1A829F56F93007B4A2F /* Passed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAFE1A729F56F93007B4A2F /* Passed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		9F2E0DE429E493E3007902BA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		9FA2F09829CA12CC00BAF8AC /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		9FA2F09A29CA1A6E00BAF8AC /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		9FAFE1A729F56F93007B4A2F /* Passed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				9FA2F09A29CA1A6E00BAF8AC /* SplashScreenView.swift */,
 				9FA2F09829CA12CC00BAF8AC /* SignUpView.swift */,
 				9F2E0DE429E493E3007902BA /* LoginView.swift */,
+				9FAFE1A729F56F93007B4A2F /* Passed.swift */,
 				9F29C73A29BE4428006D8034 /* ContentView.swift */,
 			);
 			path = Views;
@@ -157,6 +160,7 @@
 				9FA2F09B29CA1A6E00BAF8AC /* SplashScreenView.swift in Sources */,
 				9F29C73B29BE4428006D8034 /* ContentView.swift in Sources */,
 				9FA2F09929CA12CC00BAF8AC /* SignUpView.swift in Sources */,
+				9FAFE1A829F56F93007B4A2F /* Passed.swift in Sources */,
 				9F2E0DE529E493E3007902BA /* LoginView.swift in Sources */,
 				9F29C73929BE4428006D8034 /* GatePass_SAAFApp.swift in Sources */,
 			);

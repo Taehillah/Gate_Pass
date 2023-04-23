@@ -49,7 +49,7 @@ struct SignUpView: View {
                 }
                 
                 
-                .navigationTitle("Logen")
+            
                 
                 VStack{
                     Image("Image")

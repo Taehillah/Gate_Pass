@@ -26,25 +26,6 @@ struct LoginView: View {
             .edgesIgnoringSafeArea(.all)
             
             
-            
-            VStack{
-                HStack{
-                    Image(systemName: "arrowshape.backward")
-                        .foregroundColor(Color(white: 0.9))
-                        .padding( .leading, 50.0)
-                        .padding( .top, 70)
-                        .position(CGPointZero)
-                    Text("    EXIT")
-                        .fontWeight(.heavy)
-                        
-                        .foregroundColor(Color.white)
-                        .padding( .top, 70)
-                        .padding( .leading, -180)
-                        .position(CGPointZero)
-                  
-                }
-            }
-            
             VStack{
                 Image("Image")
                     .resizable(resizingMode: .stretch)
@@ -83,6 +64,9 @@ struct LoginView: View {
                 .padding()
             }
             
+            
+            
+            
             Button(action: {mvSignUpView = true}){
               
                 Text("Login")
@@ -97,7 +81,6 @@ struct LoginView: View {
             }
          
         }
-        .navigationTitle("Login")
         }
     }
 
