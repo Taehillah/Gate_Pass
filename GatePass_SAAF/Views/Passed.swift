@@ -41,7 +41,7 @@ struct Passed: View {
                     .resizable(resizingMode: .stretch)
                     .frame(width:65, height:65)
                 
-               Text("Approved")
+               Text("Authorized")
                     .foregroundColor(Color(white: 1.0))
             }
         }
