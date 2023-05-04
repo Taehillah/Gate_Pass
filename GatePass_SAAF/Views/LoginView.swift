@@ -52,7 +52,7 @@ struct LoginView: View {
                         .padding(.top)
                     
                     HStack{
-                        Image(systemName: "book")
+                        Image(systemName: "lock")
                             .foregroundColor(Color(white: 0.9))
                         TextField("force no", text: $fnLogin)
                     }

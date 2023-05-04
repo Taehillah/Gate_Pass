@@ -16,6 +16,7 @@ struct ContentView: View {
     @State var authorize = ""
     @State var submit = ""
     @State var nako = ""
+    @State var timeSelected = Date()
     @State private var mvToLoginView = false
     
     var body: some View {
@@ -72,6 +73,8 @@ struct ContentView: View {
                             .foregroundColor(Color(white: 1.0))
                             .fontWeight(.bold)
                             .padding(.top)
+                        DatePicker("", selection: $timeSelected, displayedComponents: .hourAndMinute)
+                            .datePickerStyle(.compact)
                         
                         HStack{
                             Image(systemName: "clock")
