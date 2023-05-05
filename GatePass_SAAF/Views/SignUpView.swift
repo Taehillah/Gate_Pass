@@ -79,7 +79,7 @@ struct SignUpView: View {
                         HStack{
                             Image(systemName: "star")
                                 .foregroundColor(Color(white: 0.9))
-                            TextField("force no", text: $fn)
+                            TextField("unit name", text: $fn)
                         }
                         
                         .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -92,7 +92,7 @@ struct SignUpView: View {
                         HStack{
                             Image(systemName: "lock")
                                 .foregroundColor(Color(white: 0.9))
-                            TextField("force no", text: $fn)
+                            TextField("password", text: $fn)
                         }
                         
                         .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -105,7 +105,7 @@ struct SignUpView: View {
                         HStack{
                             Image(systemName: "lock")
                                 .foregroundColor(Color(white: 0.9))
-                            TextField("force no", text: $fn)
+                            TextField("password", text: $fn)
                         }
                         
                         .textFieldStyle(RoundedBorderTextFieldStyle())
