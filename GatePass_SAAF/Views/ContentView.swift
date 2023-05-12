@@ -74,9 +74,13 @@ struct ContentView: View {
                             .fontWeight(.bold)
                             .padding(.top)
                         DatePicker("", selection: $timeSelected, displayedComponents: .hourAndMinute)
-                            .datePickerStyle(.wheel)
+                            .datePickerStyle(.compact)
                             .frame(width:30, height: 10)
                             .foregroundColor(Color(white: 1.0))
+                            .multilineTextAlignment(.center)
+                            .opacity(1.0)
+                            .padding(.leading, 50)
+                            .padding(.bottom, 10)
                             
                         
                         HStack{
