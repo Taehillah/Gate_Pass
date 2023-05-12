@@ -74,7 +74,10 @@ struct ContentView: View {
                             .fontWeight(.bold)
                             .padding(.top)
                         DatePicker("", selection: $timeSelected, displayedComponents: .hourAndMinute)
-                            .datePickerStyle(.compact)
+                            .datePickerStyle(.wheel)
+                            .frame(width:30, height: 10)
+                            .foregroundColor(Color(white: 1.0))
+                            
                         
                         HStack{
                             Image(systemName: "clock")

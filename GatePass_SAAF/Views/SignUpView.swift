@@ -127,6 +127,7 @@ struct SignUpView: View {
                         .padding(.top, 600.0)
                         .cornerRadius(20)
                 }
+                
             }
         }
     }
