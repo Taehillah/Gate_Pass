@@ -17,7 +17,6 @@ struct ContentView: View {
     @State var submit = ""
     @State var nako = ""
     @State var timeSelected = Date()
-    @State var showPicker = true
     @State private var mvToLoginView = false
     
     var body: some View {
@@ -105,33 +104,6 @@ struct ContentView: View {
                                 .foregroundColor(Color(white: 0.9))
                             TextField("Comment", text: $reason)
                             
-                            Button {
-                                        withAnimation {
-                                            showPicker.toggle()
-                                        }
-                                    }  label: {
-                                        Text(Text($timeSelected,.getFormattedDate(format:"HH:mm:")))
-                                            .padding()
-                                            .padding(.horizontal)
-                                            .background(
-                                                RoundedRectangle(cornerRadius: 10)
-                                                    .stroke(Color.gray)
-                                            )
-                                    }
-                                    .background(
-                                        DatePicker("", selection: $timeSelected,, displayedComponents: .hourAndMinute)
-                                            .datePickerStyle(.wheel)
-                                            .frame(width: 200, height: 100)
-                                            .clipped()
-                                            .background(Color.gray.cornerRadius(10))
-                                            .opacity(showPicker ? 1 : 0 )
-                                            .offset(x: 50, y: 90)
-                                           ).onChange(of: selectedDate) { newValue in
-                                               
-                                               withAnimation {
-                                                   showPicker.toggle()
-                                               }
-                                           }
                         }
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         
