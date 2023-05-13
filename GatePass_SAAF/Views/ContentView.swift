@@ -80,15 +80,15 @@ struct ContentView: View {
                             Image(systemName: "clock")
                                 .foregroundColor(Color(white: 0.9))
                          //   TextField("Time", text: $backBy)
-                            DatePicker("", selection: $timeSelected, displayedComponents: .hourAndMinute)
+                            DatePicker("", selection: $timeSelected, displayedComponents: [.date, .hourAndMinute])
                                 .datePickerStyle(.compact)
                                 .frame(width:30, height: 10)
                                 .foregroundColor(Color(white: 1.0))
                                 .multilineTextAlignment(.center)
                                 .opacity(1.0)
-                                .padding(.leading, 25)
+                                .padding(.leading, 90)
                             // .background(Color.white.opacity(0.2))
-                                
+                                .accentColor(Color.white.opacity(1.0))
                             
                         }
                         .textFieldStyle(RoundedBorderTextFieldStyle())
