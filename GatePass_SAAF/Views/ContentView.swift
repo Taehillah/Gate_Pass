@@ -86,7 +86,9 @@ struct ContentView: View {
                                 .foregroundColor(Color(white: 1.0))
                                 .multilineTextAlignment(.center)
                                 .opacity(1.0)
-                            
+                                .padding(.leading, 25)
+                            // .background(Color.white.opacity(0.2))
+                                
                             
                         }
                         .textFieldStyle(RoundedBorderTextFieldStyle())
