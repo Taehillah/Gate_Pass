@@ -79,20 +79,20 @@ struct ContentView: View {
                         HStack{
                             Image(systemName: "clock")
                                 .foregroundColor(Color(white: 0.9))
-                         //   TextField("Time", text: $backBy)
-                            DatePicker("", selection: $timeSelected, displayedComponents: [.date, .hourAndMinute])
-                                .datePickerStyle(.compact)
-                                .foregroundColor(Color(white: 1.0))
-                                .multilineTextAlignment(.center)
-                                .opacity(1.0)
-                                .frame(width:370, height:35)
-                                .border(Color.white)
-                                
-                                .background(Color.white.opacity(1.0))
-                                .accentColor(Color.white.opacity(1.0))
+                            //   TextField("Time", text: $backBy)
+                            
+                            GeometryReader { geometry in
+                                DatePicker("Select a date", selection: $timeSelected, displayedComponents: [.date, .hourAndMinute])
+                                    .frame(width: geometry.size.width / 2, height: 11)
+                                    .foregroundColor(.white)
+                                    .labelsHidden()
+                            }
+
                             
                         }
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .cornerRadius(5)
+                        
                         
                         Text("Reason")
                             .foregroundColor(Color(white: 1.0))
