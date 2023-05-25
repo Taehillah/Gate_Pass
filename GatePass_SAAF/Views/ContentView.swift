@@ -84,7 +84,10 @@ struct ContentView: View {
                                 DatePicker("", selection: $timeSelected, displayedComponents: [.date, .hourAndMinute])
                                     .foregroundColor(.white)
                                     .labelsHidden()
-                            
+                                    .background()
+                                    .cornerRadius(5)
+                                    .textFieldStyle(.automatic)
+                                    
                         }
                         
                         
