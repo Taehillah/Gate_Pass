@@ -81,12 +81,11 @@ struct ContentView: View {
                                 .foregroundColor(Color(white: 0.9))
                             //   TextField("Time", text: $backBy)
                             
-                            GeometryReader { geometry in
-                                DatePicker("", selection: $timeSelected, displayedComponents: [.hourAndMinute])
-                                    
+                            
+                                DatePicker("", selection: $timeSelected, displayedComponents: [.date, .hourAndMinute])
                                     .foregroundColor(.white)
                                     
-                            }
+                            
 
                             
                         }
