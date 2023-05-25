@@ -82,16 +82,15 @@ struct ContentView: View {
                             //   TextField("Time", text: $backBy)
                             
                             GeometryReader { geometry in
-                                DatePicker("Select a date", selection: $timeSelected, displayedComponents: [.date, .hourAndMinute])
-                                    .frame(width: geometry.size.width / 2, height: 11)
+                                DatePicker("", selection: $timeSelected, displayedComponents: [.hourAndMinute])
+                                    
                                     .foregroundColor(.white)
-                                    .labelsHidden()
+                                    
                             }
 
                             
                         }
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .cornerRadius(5)
+                        
                         
                         
                         Text("Reason")
