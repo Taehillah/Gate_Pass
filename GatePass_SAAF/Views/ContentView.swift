@@ -31,23 +31,7 @@ struct ContentView: View {
                 }
                 .edgesIgnoringSafeArea(.all)
                 
-                VStack{
-                    HStack{
-                        Image(systemName: "arrowshape.backward.fill")
-                            .foregroundColor(Color(white: 0.9))
-                            .padding( .leading, 50.0)
-                            .padding( .top, 70)
-                            .position(CGPointZero)
-                        Text("EXIT")
-                            .fontWeight(.heavy)
-                        
-                            .foregroundColor(Color.white)
-                            .padding( .top, 70)
-                            .padding( .leading, -180)
-                            .position(CGPointZero)
-                        
-                    }
-                }
+             
                 
                 
                 VStack{
